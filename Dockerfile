@@ -11,6 +11,6 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 EXPOSE 8000
 
-COPY ./app /app
+COPY ./api /app
 
 CMD [ "fastapi", "dev", "api/main.py"]
